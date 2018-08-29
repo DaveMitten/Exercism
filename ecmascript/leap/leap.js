@@ -74,15 +74,17 @@ class Year {
 	constructor(year) {
 		this.year = year;
 	}
-	isLeap() {
-		return isLeapYear(this.year)
-	}
 
 	isLeapYear(year) {
-		(year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
-		return year
+		var a = (year % 100 == 0) ? (year % 400 == 0) : (year % 4 == 0);
+		return a;
 
 	}
+	isLeap() {
+		return isLeapYear(this.year);
+	}
+
+
 }
 
 
